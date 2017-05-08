@@ -1,5 +1,5 @@
 # json-xml
-[![npm version](https://img.shields.io/badge/npm-1.0.4-green.svg)](https://www.npmjs.com/package/ay-json-xml)
+[![npm version](https://img.shields.io/badge/npm-1.0.5-green.svg)](https://www.npmjs.com/package/json-xml)
 
 turn json to xml and xml to json
 
@@ -11,12 +11,12 @@ npm install json-xml
 ```javascript
 const {toXml, toJson} = require('json-xml');
 const json = {
-	person: {
-		name: {
-		  first: 'john',
-			last: 'doe'
-		}
-	}
+    person: {
+        name: {
+            first: 'john',
+            last: 'doe'
+        }
+    }
 };
 const xml = toXml(json);
 const jsonAgain = toJson(xml);
