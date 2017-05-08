@@ -1,5 +1,5 @@
-# ay-json-xml
-[![npm version](https://img.shields.io/badge/npm-1.0.2-green.svg)](https://www.npmjs.com/package/ay-json-xml)
+# json-xml
+[![npm version](https://img.shields.io/badge/npm-1.0.3-green.svg)](https://www.npmjs.com/package/ay-json-xml)
 
 turn json to xml and xml to json
 
@@ -9,7 +9,7 @@ npm install json-xml
 ```
 ### Usage Example:
 ```javascript
-const {toXml, toJson} = require('ay-json-xml');
+const {toXml, toJson} = require('json-xml');
 const json = {
 	person: {
 		name: {
