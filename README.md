@@ -1,7 +1,7 @@
 # ay-json-xml
-[![npm version](https://img.shields.io/badge/npm-1.0.0-green.svg)](https://www.npmjs.com/package/ay-json-xml)
+[![npm version](https://img.shields.io/badge/npm-1.0.1-green.svg)](https://www.npmjs.com/package/ay-json-xml)
 
-promisify node callbacks
+turn json to xml and xml to json
 
 ### Install:
 ```
