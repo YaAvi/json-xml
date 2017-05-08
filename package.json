@@ -1,15 +1,23 @@
 {
   "name": "json-xml",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "turn json to xml and xml to json",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaAvi/ay-promisify.git"
+  },
   "keywords": [
     "json",
     "xml"
   ],
-  "author": "Avi Y.",
-  "license": "MIT"
+  "author": "Avi Yaakov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YaAvi/ay-promisify/issues"
+  },
+  "homepage": "https://github.com/YaAvi/ay-promisify#readme"
 }

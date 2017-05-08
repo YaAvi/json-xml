@@ -1,5 +1,5 @@
 # json-xml
-[![npm version](https://img.shields.io/badge/npm-1.0.3-green.svg)](https://www.npmjs.com/package/ay-json-xml)
+[![npm version](https://img.shields.io/badge/npm-1.0.4-green.svg)](https://www.npmjs.com/package/ay-json-xml)
 
 turn json to xml and xml to json
 
@@ -13,7 +13,7 @@ const {toXml, toJson} = require('json-xml');
 const json = {
 	person: {
 		name: {
-			first: 'john',
+		  first: 'john',
 			last: 'doe'
 		}
 	}
