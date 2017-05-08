@@ -1,0 +1,15 @@
+{
+  "name": "json-xml",
+  "version": "1.0.0",
+  "description": "turn json to xml and xml to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "xml"
+  ],
+  "author": "Avi Y.",
+  "license": "MIT"
+}
