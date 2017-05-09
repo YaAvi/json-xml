@@ -1,5 +1,5 @@
 # json-xml
-[![npm version](https://img.shields.io/badge/npm-1.0.6-green.svg)](https://www.npmjs.com/package/json-xml)
+[![npm version](https://img.shields.io/badge/npm-1.0.7-green.svg)](https://www.npmjs.com/package/json-xml)
 
 turn json to xml and xml to json
 

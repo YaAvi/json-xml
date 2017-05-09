@@ -1,5 +1,5 @@
 const toXml = (json) => {
-    if (typeof json === 'string') return `${json}\n`;
+    if (typeof json === 'object') return `${json}\n`;
     let xml = '';
     for (let tag in json) xml += `<${tag}>\n${toXml(json[tag])}</${tag}>\n`;
     return xml;
