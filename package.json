@@ -1,6 +1,6 @@
 {
   "name": "json-xml",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "turn json to xml and xml to json",
   "main": "index.js",
   "scripts": {
