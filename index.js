@@ -1,19 +1,15 @@
-const toXml = (json) => {
-    if (typeof json !== 'object') return `${json}\n`;
-    let xml = '';
-    for (let tag in json) xml += `<${tag}>\n${toXml(json[tag])}</${tag}>\n`;
-    return xml;
-}
+const toXml = j => !j || typeof j !== 'object' ? `${j}\n` :
+    Object.keys(j).reduce((a, t) => `${a}<${t}>\n${toXml(j[t])}</${t}>\n`, '');
 
 const toJson = xml => {
-    var stack = [];
-    var json = {};
-    var arr = xml.replace(/<\//gi, '\n<').replace(/>|\//gi, '\n').split(/\s|\t|\n|\\/).filter(x => x != '');
-    for (var i = 0; i < arr.length; i++) {
-        var key = stack.reduce((x, val) => x[val] = x[val] || (arr[i][0] === '<' ? {} : arr[i]), json);
-        if (arr[i][0] === '<')
-            stack[stack.length - 1] != arr[i].slice(1) ? stack.push(arr[i].slice(1)) : stack.pop();
-    }
+    const stack = [];
+    const json = {};
+    const arr = xml.replace(/<\//gi, '\n<').replace(/>|\//gi, '\n').split(/\s|\t|\n|\\/).filter(x => x != '');
+    arr.forEach((a, i) => {
+        const key = stack.reduce((x, val) => x[val] = x[val] || (a[0] === '<' ? {} : a), json);
+        if (a[0] === '<')
+            stack[stack.length - 1] != a.slice(1) ? stack.push(a.slice(1)) : stack.pop();
+    })
     return json;
 }
 
